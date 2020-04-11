@@ -28,3 +28,8 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
     slides[slideIndex-1].classList.remove('fade');
 }
+
+window.addEventListener("load",function() {
+    showSlides(slideIndex);
+    myTimer = setInterval(function(){plusSlides(1)}, 4000);
+})
