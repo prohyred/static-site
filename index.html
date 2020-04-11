@@ -37,7 +37,9 @@
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/logo.png" alt=""/></a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            ProHyred
+        </a>
         <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
                 type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
                 aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
@@ -46,30 +48,25 @@
                 <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                                                      href="#whyus">Why us?</a></li>
                 <li class="nav-item mx-0 mx-lg-1">
-                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                       type="button" data-toggle="collapse" data-target="#navbarSolutions"
-                       aria-controls="navbarSolutions"
-                       aria-expanded="false" aria-label="Toggle solutions">Solutions</a>
-                    <div class="collapse navbar-solutions-collapse" id="navbarSolutions">
-                        <ul class="navbar-nav ml-auto flex-column">
-                            <li class="nav-item mx-0 mx-lg-1">
-                                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                                   href="#recruiters">Recruiters</a>
-                            </li>
-                            <li class="nav-item mx-0 mx-lg-1">
-                                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#jobseekers">Job
-                                    Seekers</a>
-                            </li>
-                        </ul>
+                    <div class="btn-group">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded dropdown-toggle"
+                            data-toggle="dropdown" id="navSolution" type="button" aria-haspopup="true" 
+                            aria-expanded="false">Solutions
+                        </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item js-scroll-trigger" href="#recruiters">Recruiters</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item js-scroll-trigger" href="#jobseekers">Job Seekers</a>
+                        </div>
                     </div>
-
                 </li>
+
                 <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                                                      href="#about">About Us</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                                                     href="#contact">Contact</a></li>
+                <!-- <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                                                     href="#contact">Contact</a></li> -->
                 <li class="nav-item mx-0 mx-lg-1 demo-li"><button class="demo-button text-uppercase font-weight-bold bg-primary text-white rounded"
-                                                    onclick="document.getElementById('contact').scrollIntoView();">Request a Demo</button></li>
+                                                    onclick="document.getElementById('contact').scrollIntoView();">Get Started</button></li>
             </ul>
         </div>
     </div>
@@ -92,7 +89,7 @@
         </div>
         <div class="mySlides fade">
             <img class="w-100 carousel-image" src="assets/img/hr-process-4783430_1920.png">
-            <div class="text text-white top">Send Qualified Candidates to the Companies</div>
+            <div class="text text-white top">Bring Qualified Candidates on-site and hire</div>
         </div>
         <a class="prev left-0 bg-dark" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next badge-dark" onclick="plusSlides(1)">&#10095;</a>
@@ -108,7 +105,7 @@
     </div>
 </header>
 
-<section class="page-section mb-0" id="whyus">
+<section class="page-section mb-0 bg-light-green" id="whyus">
     <div class="container">
         <!-- About why us Heading-->
         <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Why Us?</h2>
@@ -141,6 +138,7 @@
     </div>
 </section>
 
+<!-- Solution -->
 <section class="page-section mb-0">
     <div class="container">
         <!-- About why us Heading-->
@@ -153,7 +151,7 @@
         </div>
         <!-- Why us Content-->
         <div class="row flex-column">
-            <div id="recruiters">
+            <section id="recruiters">
                 <p class="lead subtitle">RECRUITERS</p>
                 <div class="solutions-wrapper">
                     <div class="col-10 col-lg-5 m-auto">
@@ -163,15 +161,15 @@
                         <p> We share the PAT results along with recommendation and feedback so that Recruiters can take the final
                             decision on bringing qualified candidates onsite.</p>
                         <button class="mt-2 demo-button text-uppercase font-weight-bold bg-primary text-white rounded"
-                                onclick="document.getElementById('contact').scrollIntoView();">Request a Demo</button>
+                                onclick="document.getElementById('contact').scrollIntoView();">Get Started</button>
                     </div>
                     <div class="col-12 col-lg-5 solutions-image p-5"><p class="lead">
-                        <img class="masthead-avatar w-100" src="assets/img/employee2.png" alt=""/>
+                        <img class="masthead-avatar w-100" src="assets/img/employee2.jpg" alt=""/>
                     </div>
                 </div>
                 <div class="solutions-wrapper">
                     <div class="col-12 col-lg-5 solutions-image p-5 hide-lg-down "><p class="lead">
-                        <img class="masthead-avatar w-100" src="assets/img/employersource.png" alt=""/>
+                        <img class="masthead-avatar w-100" src="assets/img/employersource.jpg" alt=""/>
                     </div>
                     <div class="col-10 col-lg-5 m-auto">
                         <p class="lead font-weight-bolder">When Recruiters already have your candidates for Interview :</p>
@@ -180,21 +178,21 @@
                         <p> We share the PAT results along with recommendation and feedback so that Recruiters can take the final
                             decision on bringing qualified candidates onsite..</p>
                         <button class="mt-2 demo-button text-uppercase font-weight-bold bg-primary text-white rounded"
-                                onclick="document.getElementById('contact').scrollIntoView();">Request a Demo</button>
+                                onclick="document.getElementById('contact').scrollIntoView();">Get Started</button>
                     </div>
                     <div class="col-12 col-lg-5 solutions-image p-5 hide-lg-up"><p class="lead">
-                        <img class="masthead-avatar w-100" src="assets/img/employersource.png" alt=""/>
+                        <img class="masthead-avatar w-100" src="assets/img/employersource.jpg" alt=""/>
                     </div>
                 </div>
-            </div>
+            </section>
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
                 <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
-            <div>
+            <section id="jobseekers">
                 <p class="lead subtitle">Job Seekers</p>
-                <div id="jobseekers" class="solutions-wrapper">
+                <div class="solutions-wrapper">
                     <div class="col-10 col-lg-5 m-auto">
                         <p class="lead font-weight-bolder">Job Seekers can register on our platform and take up our ProHyred
                             Aptitude Test (PAT) at no
@@ -212,15 +210,15 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-5 solutions-image p-5"><p class="lead">
-                        <img class="masthead-avatar w-100" src="assets/img/candidatesApply.png" alt=""/>
+                        <img class="masthead-avatar w-100" src="assets/img/candidatesApply.jpg" alt=""/>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
 </section>
 <!-- About Section-->
-<section class="page-section mb-0" id="about">
+<section class="page-section bg-light-green mb-0" id="about">
     <div class="container">
         <!-- About Section Heading-->
         <h2 class="page-section-heading text-center text-uppercase">About Us</h2>
@@ -254,44 +252,53 @@
         </div>
         <!-- Contact Section Form-->
         <div class="row">
-            <div class="col-lg-8 mx-auto">
+            <div class="col-lg-5  mx-auto contact-text">
+                <h2>Yet To Decide</h2>
+                <h1>Write something related to get started.</h1>
+            </div>
+            <div class="contact-form p-5 col-lg-5 mx-auto">
                 <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
                 <form id="contactForm" action="#" name="sentMessage" novalidate="novalidate">
                     <div class="control-group">
+                        <label>Name*</label>
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                            <label>Name</label><input class="form-control" id="name" name="name" type="text"
+                            <input class="form-control" id="name" name="name" type="text"
                                                       placeholder="Name" required="required"
                                                       data-validation-required-message="Please enter your name."/>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="control-group">
+                        <label>Email Address*</label>
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                            <label>Email Address</label><input class="form-control" id="email" name="email" type="email"
+                            <input class="form-control" id="email" name="email" type="email"
                                                                placeholder="Email Address" required="required"
                                                                data-validation-required-message="Please enter your email address."/>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="control-group">
+                        <label>Phone Number*</label>
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                            <label>Phone Number</label><input class="form-control" id="phone" name="phone" type="tel"
+                            <input class="form-control" id="phone" name="phone" type="tel"
                                                               placeholder="Phone Number" required="required"
                                                               data-validation-required-message="Please enter your phone number."/>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="control-group">
+                        <label>Company*</label>
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                            <label>Company</label><input class="form-control" id="company" name="company" type="text"
+                            <input class="form-control" id="company" name="company" type="text"
                                                          placeholder="Company Name" required="required"
                                                          data-validation-required-message="Please enter your company name."/>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="control-group">
+                        <label>Message</label>
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                            <label>Message</label><textarea class="form-control" id="message" name="message" rows="5"
+                            <textarea class="form-control" id="message" name="message" rows="5"
                                                             placeholder="Message"></textarea>
                             <p class="help-block text-danger"></p>
                         </div>
@@ -299,7 +306,7 @@
                     <br/>
                     <div id="success"></div>
                     <div class="form-group">
-                        <button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button>
+                        <button class="btn btn-primary" id="sendMessageButton" type="submit">Send</button>
                     </div>
                 </form>
             </div>
