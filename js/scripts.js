@@ -8,7 +8,10 @@
 
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) { 
+        if (this.hash === '#recruiters' || this.hash === '#jobseekers') {
+          $('.dropdown-menu').collapse('hide');
+        }
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
@@ -67,31 +70,32 @@
 
   })(jQuery); // End of use strict
 
-// $(document).ready(function() {
-//   $(document).on('submit', '#contactForm', function(e) {
+$(document).ready(function() {
+  $(document).on('submit', '#contactForm', function(e) {
 
-//     e.preventDefault();
-//     var values = {};
-//     $.each($('#contactForm').serializeArray(), function(i, field) {
-//         values[field.name] = field.value;
-//     });
+    e.preventDefault();
+    var values = {};
+    $.each($('#contactForm').serializeArray(), function(i, field) {
+        values[field.name] = field.value;
+    });
 
-//     // Use Ajax to submit form data
-//     var url = 'https://script.google.com/macros/s/AKfycby3JLci0ay5Elztdyj5DH2sl1XVMHOCbDqLGpHuq2GokJOIszo/exec';
-//     url += `?callback=success&name=${values.name}&email=${values.email}&phone=${values.phone}&message=${values.message}&action=insert`;
+    // Use Ajax to submit form data
+    var url = 'https://script.google.com/macros/s/AKfycby3JLci0ay5Elztdyj5DH2sl1XVMHOCbDqLGpHuq2GokJOIszo/exec';
+    url += `?callback=success&name=${values.name}&email=${values.email}&phone=${values.phone}&message=${values.message}&action=insert`;
 
-//     $.ajax({
-//       type: "GET",
-//       crossDomain: true,
-//       url: url, 
-//       dataType: "jsonp"
-//     })
-//     .then(res => {
-//       console.log(res.success());
-//     })
-//     .catch(res => {
-//       console.log(res);
-//     });
+    $.ajax({
+      type: "GET",
+      crossDomain: true,
+      url: url, 
+      dataType: "jsonp"
+    })
+    .then(res => {
+      console.log(res.success());
+    })
+    .catch(res => {
+      console.log(res);
+    });
 
-//   });
-// });
+  });
+});
+

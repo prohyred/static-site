@@ -556,6 +556,19 @@ pre code {
     margin-left: auto;
 }
 
+.solutions-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.hide-lg-down{
+    display: none;
+}
+
+.hide-lg-up{
+    display: block;
+}
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
@@ -572,11 +585,15 @@ pre code {
     .container {
         max-width: 960px;
     }
+
+    .solutions-wrapper{
+        flex-direction: row;
+    }
 }
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 1140px;
+        max-width: 1400px;
     }
 }
 
@@ -608,7 +625,7 @@ pre code {
 
 @media (min-width: 1200px) {
     .container-xl, .container-lg, .container-md, .container-sm, .container {
-        max-width: 1140px;
+        max-width: 1400px;
     }
 }
 
@@ -4238,7 +4255,7 @@ input[type=button].btn-block {
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-    color: #fff;
+    color: #38a8e0;
     background-color: #38a8e0;
 }
 
@@ -6633,7 +6650,7 @@ a.close.disabled {
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-    background-color: #148f77 !important;
+    background-color: #38a8e0 !important;
 }
 
 .bg-secondary {
@@ -6987,6 +7004,12 @@ button.bg-dark:focus {
 
     .d-lg-inline-flex {
         display: inline-flex !important;
+    }
+    .hide-lg-up{
+        display: none;
+    }
+    .hide-lg-down{
+        display: block;
     }
 }
 
@@ -7909,6 +7932,22 @@ button.bg-dark:focus {
     left: 0;
     z-index: 1030;
 }
+
+.subtitle{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.demo-button{
+    padding: 10px;
+    box-shadow: 2px 2px 15px 2px #38a8e0b0;
+    border: none;
+}
+.demo-li{
+    padding: 5px;
+      }
 
 @supports ((position: -webkit-sticky) or (position: sticky)) {
     .sticky-top {
@@ -10274,6 +10313,12 @@ button.bg-dark:focus {
     .text-lg-center {
         text-align: center !important;
     }
+
+    .solutions-image {
+        box-shadow: 0 0 10px 2px #38a8e0;
+        margin: 50px auto;
+        border-radius: 5px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -10372,6 +10417,10 @@ a.text-warning:hover, a.text-warning:focus {
 
 .text-danger {
     color: #dc3545 !important;
+}
+
+.text-danger ul {
+    padding-left: 16px;
 }
 
 a.text-danger:hover, a.text-danger:focus {
@@ -10674,13 +10723,11 @@ a.text-dark:hover, a.text-dark:focus {
     }
 
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-        color: #fff;
-        background: #38a8e0;
+        color: #38a8e0;
     }
 
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-        color: #fff;
-        background: #38a8e0;
+        color: #38a8e0;
     }
 
     #mainNav.navbar-shrink {
@@ -10798,21 +10845,19 @@ a.text-dark:hover, a.text-dark:focus {
 
 .floating-label-form-group {
     position: relative;
-    border-bottom: 1px solid #e9ecef;
 }
 
 .floating-label-form-group input,
 .floating-label-form-group textarea {
-    font-size: 1.5em;
+    letter-spacing: normal;
+    font-size: 1em;
     position: relative;
     z-index: 1;
-    padding-right: 0;
-    padding-left: 0;
     resize: none;
-    border: none;
-    border-radius: 0;
     background: none;
-    box-shadow: none !important;
+    border: 1px solid #b2b3b3;
+    box-shadow: inset 0 1px 2px rgba(0,3,3,.1);
+    border-radius: 4px;
 }
 
 .floating-label-form-group label {
@@ -10827,11 +10872,6 @@ a.text-dark:hover, a.text-dark:focus {
     opacity: 0;
 }
 
-.floating-label-form-group:not(:first-child) {
-    padding-left: 14px;
-    border-left: 1px solid #e9ecef;
-}
-
 .floating-label-form-group-with-value label {
     top: 0;
     opacity: 1;
@@ -10839,10 +10879,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 .floating-label-form-group-with-focus label {
     color: #38a8e0;
-}
-
-form .row:first-child .floating-label-form-group {
-    border-top: 1px solid #e9ecef;
 }
 
 .footer {
@@ -10904,9 +10940,16 @@ img {vertical-align: middle;}
     font-weight: 600;
     padding: 8px 12px;
     position: absolute;
-    top: 8px;
     width: 100%;
     text-align: center;
+}
+
+.top{
+    top: 5px;
+}
+
+.bottom {
+    bottom: 5px;
 }
 
 /* Number text (1/3 etc) */
@@ -10930,7 +10973,7 @@ img {vertical-align: middle;}
     transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.dot:hover {
     background-color: #717171;
 }
 
