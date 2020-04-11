@@ -31,8 +31,15 @@
     });
 
     // Closes responsive menu when a scroll trigger link is clicked
-    $('.js-scroll-trigger').click(function() {
-      $('.navbar-collapse').collapse('hide');
+    $('.js-scroll-trigger').click(function(event) {
+        if(event.currentTarget.innerText.toLowerCase() === 'recruiters' || event.currentTarget.innerText.toLowerCase() === 'job seekers') {
+            $('.navbar-collapse').collapse('hide');
+            $('.navbar-solutions-collapse').collapse('hide');
+        } else if(event.currentTarget.innerText.toLowerCase() !== 'solutions') {
+            $('.navbar-collapse').collapse('hide');
+
+        }
+
     });
 
     // Activate scrollspy to add active class to navbar items on scroll
