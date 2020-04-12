@@ -4305,11 +4305,14 @@ input[type=button].btn-block {
     padding-top: 0.3125rem;
     padding-bottom: 0.3125rem;
     margin-right: 1rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: inherit;
     white-space: nowrap;
 }
 
+.demo-button{
+    font-size: 0.8rem;
+}
 .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none;
 }
@@ -10704,7 +10707,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 #mainNav .navbar-toggler {
     font-size: 80%;
-    padding: 0.8rem;
 }
 
 @media (min-width: 992px) {
@@ -11019,4 +11021,8 @@ img {vertical-align: middle;}
 
 .bg-light-green {
     background-color: #38a8e024;
+}
+
+.menu{
+    font-size: 1.5rem;
 }

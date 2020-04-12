@@ -40,9 +40,15 @@
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
             ProHyred
         </a>
-        <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
-                type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
+        <div class="row flex-row">
+            <button class="demo-button text-uppercase font-weight-bold bg-primary text-white rounded hide-lg-up"
+                    onclick="document.getElementById('contact').scrollIntoView();">Get Started
+            </button>
+            <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold text-white rounded"
+                    type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                    aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars menu"></i></button>
+        </div>
+
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
@@ -50,13 +56,13 @@
                 <li class="nav-item mx-0 mx-lg-1 hide-lg-down">
                     <div class="btn-group">
                         <a class="nav-link py-3 px-0 px-lg-3 rounded dropdown-toggle"
-                            data-toggle="dropdown" id="navSolution" type="button" aria-haspopup="true" 
-                            aria-expanded="false">Solutions
+                           data-toggle="dropdown" id="navSolution" type="button" aria-haspopup="true"
+                           aria-expanded="false">Solutions
                         </a>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item js-scroll-trigger" href="#recruiters">Recruiters</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item js-scroll-trigger" href="#jobseekers">Job Seekers</a>
+                            <a class="dropdown-item js-scroll-trigger" href="#recruiters">Recruiters</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item js-scroll-trigger" href="#jobseekers">Job Seekers</a>
                         </div>
                     </div>
                 </li>
@@ -84,8 +90,11 @@
                                                      href="#about">About Us</a></li>
                 <!-- <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                                                      href="#contact">Contact</a></li> -->
-                <li class="nav-item mx-0 mx-lg-1 demo-li"><button class="demo-button text-uppercase font-weight-bold bg-primary text-white rounded"
-                                                    onclick="document.getElementById('contact').scrollIntoView();">Get Started</button></li>
+                <li class="nav-item mx-0 mx-lg-1 demo-li hide-lg-down">
+                    <button class="demo-button text-uppercase font-weight-bold bg-primary text-white rounded"
+                            onclick="document.getElementById('contact').scrollIntoView();">Get Started
+                    </button>
+                </li>
             </ul>
         </div>
     </div>
@@ -136,20 +145,20 @@
         </div>
         <!-- Why us Content-->
         <div class="row flex-column">
-            <div class="col-10 m-auto"><p class="lead">Job recruitment is a very tedious task, it involves multiple
+            <div class="col-10 m-auto"><p>Job recruitment is a very tedious task, it involves multiple
                 interviews, requires several resources, and it's time-consuming. It is also a tiring process for a
                 candidate. Candidates need to look out for multiple opportunities suited for their profile and
                 skillset.</p></div>
             <div class="col-10 m-auto">
                 <h4 class="mt-5">Missing Hiring Targets</h4>
-                <p class="lead">Many teams miss hiring targets by more than 55% due to lack of standard interview
+                <p>Many teams miss hiring targets by more than 55% due to lack of standard interview
                     process and the expertise of interviewers.
                 </p>
-                <p class="lead">Less than 25% of the team have the expertise to do so with the consistency needed to get
+                <p>Less than 25% of the team have the expertise to do so with the consistency needed to get
                     predictable results.
                 </p>
             </div>
-            <div class="col-10 m-auto"><p class="lead">To help recruiters and job seekers, we have designed a
+            <div class="col-10 m-auto"><p>To help recruiters and job seekers, we have designed a
                 sophisticated and elegant system at ProHyred. </p></div>
             <!--                    <img class="masthead-avatar mb-5" src="assets/img/hiring-1977803_1920.jpg" alt="" />-->
         </div>
@@ -175,12 +184,15 @@
                 <div class="solutions-wrapper">
                     <div class="col-10 col-lg-5 m-auto">
                         <p class="lead font-weight-bolder">When you only have the Job Requirement:</p>
-                        <p>You can send us the job requirement. We find the candidates and do all the screenings based on JD
+                        <p>You can send us the job requirement. We find the candidates and do all the screenings based
+                            on JD
                             and skills required.</p>
-                        <p> We share the PAT results along with recommendation and feedback so that you can take the final
+                        <p> We share the PAT results along with recommendation and feedback so that you can take the
+                            final
                             decision on bringing qualified candidates onsite.</p>
                         <button class="mt-2 demo-button text-uppercase font-weight-bold bg-primary text-white rounded"
-                                onclick="document.getElementById('contact').scrollIntoView();">Get Started</button>
+                                onclick="document.getElementById('contact').scrollIntoView();">Get Started
+                        </button>
                     </div>
                     <div class="col-12 col-lg-5 solutions-image p-5"><p class="lead">
                         <img class="masthead-avatar w-100" src="assets/img/employee2.jpg" alt=""/>
@@ -192,12 +204,15 @@
                     </div>
                     <div class="col-10 col-lg-5 m-auto">
                         <p class="lead font-weight-bolder">When you already have your candidates for Interview :</p>
-                        <p> You can send the list of candidates for the PAT Interview process, and we do all the screenings
+                        <p> You can send the list of candidates for the PAT Interview process, and we do all the
+                            screenings
                             based on JD and skills required.</p>
-                        <p> We share the PAT results along with recommendation and feedback so that you can take the final
+                        <p> We share the PAT results along with recommendation and feedback so that you can take the
+                            final
                             decision on bringing qualified candidates onsite..</p>
                         <button class="mt-2 demo-button text-uppercase font-weight-bold bg-primary text-white rounded"
-                                onclick="document.getElementById('contact').scrollIntoView();">Get Started</button>
+                                onclick="document.getElementById('contact').scrollIntoView();">Get Started
+                        </button>
                     </div>
                     <div class="col-12 col-lg-5 solutions-image p-5 hide-lg-up"><p class="lead">
                         <img class="masthead-avatar w-100" src="assets/img/employersource.jpg" alt=""/>
@@ -222,7 +237,7 @@
                             different employers via ProHyred.
                         <p>
                         <p> We share your interview feedback with employers based on which the Recruiters will call you
-                        onsite for the final hiring process.</p>
+                            onsite for the final hiring process.</p>
 
                         <div class="pt-5">
                             <p>* Send your resume to <a href="https://www.w3schools.com">hello@prohyred.com</a></p>
@@ -249,12 +264,21 @@
         </div>
         <!-- About Section Content-->
         <div class="row">
-            <div class="col-lg-4 ml-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start
-                Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well
-                as optional SASS stylesheets for easy customization.</p></div>
-            <div class="col-lg-4 mr-auto"><p class="lead">You can create your own custom avatar for the masthead, change
-                the icon in the dividers, and add your email address to the contact form to make it fully
-                functional!</p></div>
+            <div class="col-lg-4 ml-auto">
+                <p>
+                    We started ProHyred with a vision of solving the problems faced by recruiters during the screening
+                    process.
+                    There are multiple factors which are often overlooked by the Hiring team while creating a selection
+                    process.
+                    Also, the age-old interview processes don't work in today's highly demanding screening process.
+                </p>
+            </div>
+            <div class="col-lg-4 mr-auto">
+                <p>
+                    Our team has also faced these challenges multiple times as candidates as well as a recruiter.
+                    So we decided to solve this problem with technology, by creating a "test engine"
+                </p>
+            </div>
         </div>
     </div>
 </section>
@@ -275,8 +299,8 @@
                         <label>Name*</label>
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
                             <input class="form-control" id="name" name="name" type="text"
-                                                      placeholder="Name" required="required"
-                                                      data-validation-required-message="Please enter your name."/>
+                                   placeholder="Name" required="required"
+                                   data-validation-required-message="Please enter your name."/>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
@@ -284,8 +308,8 @@
                         <label>Email Address*</label>
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
                             <input class="form-control" id="email" name="email" type="email"
-                                                               placeholder="Email Address" required="required"
-                                                               data-validation-required-message="Please enter your email address."/>
+                                   placeholder="Email Address" required="required"
+                                   data-validation-required-message="Please enter your email address."/>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
@@ -293,8 +317,8 @@
                         <label>Phone Number*</label>
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
                             <input class="form-control" id="phone" name="phone" type="tel"
-                                                              placeholder="Phone Number" required="required"
-                                                              data-validation-required-message="Please enter your phone number."/>
+                                   placeholder="Phone Number" required="required"
+                                   data-validation-required-message="Please enter your phone number."/>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
@@ -302,8 +326,8 @@
                         <label>Company*</label>
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
                             <input class="form-control" id="company" name="company" type="text"
-                                                         placeholder="Company Name" required="required"
-                                                         data-validation-required-message="Please enter your company name."/>
+                                   placeholder="Company Name" required="required"
+                                   data-validation-required-message="Please enter your company name."/>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
@@ -311,14 +335,14 @@
                         <label>Message</label>
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
                             <textarea class="form-control" id="message" name="message" rows="5"
-                                                            placeholder="Message"></textarea>
+                                      placeholder="Message"></textarea>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <br/>
                     <div id="success"></div>
                     <div class="form-group">
-                        <button class="btn btn-primary" id="sendMessageButton" type="submit">Reqest</button>
+                        <button class="btn btn-primary" id="sendMessageButton" type="submit">Request</button>
                     </div>
                 </form>
             </div>
@@ -336,8 +360,14 @@
             </div>
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <h4 class="text-uppercase mb-4">Around the Web</h4>
-                <a class="btn btn-outline-light btn-social mx-1" href="#"><i class="fab fa-fw fa-facebook-f"></i></a>
-                <a class="btn btn-outline-light btn-social mx-1" href="#"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/ProHyred-100535751632697/" target="_blank">
+                    <i class="fab fa-fw fa-facebook-f"></i>
+                </a>
+                <a class="btn btn-outline-light btn-social mx-1"
+                   href="https://www.google.com/url?q=https://www.linkedin.com/company/prohyred/&sa=D&source=hangouts&ust=1586801568349000&usg=AFQjCNHrvQAt1q_9ts-ORbbxV9wWhbwSdA"
+                   target="_blank">
+                    <i class="fab fa-fw fa-linkedin-in"></i>
+                </a>
             </div>
 
         </div>
