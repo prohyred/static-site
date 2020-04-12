@@ -87,7 +87,7 @@ $(document).ready(function() {
     });
 
     // Use Ajax to submit form data
-    var url = 'https://script.google.com/macros/s/AKfycby3JLci0ay5Elztdyj5DH2sl1XVMHOCbDqLGpHuq2GokJOIszo/exec';
+    var url = 'https://script.google.com/macros/s/AKfycbw4mxLeCl6tGXYz_uZqMyvMo2TJWFgCjOW6rYLddgnXgpkamWQT/exec';
     url += `?callback=success&name=${values.name}&email=${values.email}&phone=${values.phone}&message=${values.message}&action=insert`;
 
     $.ajax({

@@ -8342,7 +8342,7 @@ button.bg-dark:focus {
 
 .pt-5,
 .py-5 {
-    padding-top: 3rem !important;
+    padding-top: 2rem !important;
 }
 
 .pr-5,
@@ -11014,9 +11014,7 @@ img {vertical-align: middle;}
 }
 
 .contact-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin: 6%;
 }
 
 .bg-light-green {
