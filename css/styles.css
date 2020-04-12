@@ -3397,9 +3397,9 @@ input[type=button].btn-block {
 }
 
 .dropdown-item.active, .dropdown-item:active {
-    color: #fff;
+    color: #38a8e0;
     text-decoration: none;
-    background-color: #38a8e0;
+    font-weight: bold;
 }
 
 .dropdown-item.disabled, .dropdown-item:disabled {
@@ -11009,7 +11009,7 @@ img {vertical-align: middle;}
     left: 0;
 }
 
-.contact-form{
+.contact-form {
     box-shadow: 0 0 5px 7px #38a8e03d;
 }
 
